@@ -1,3 +1,35 @@
 body {
     background: linear-gradient(to right, #dcb7ff 0%, #6002ad 100%);
 }
+header {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Вирівнювання від лівого краю */
+}
+
+#author-photo {
+    width: 500px; /* Збільшуємо розмір фотографії автора */
+}
+
+nav {
+    margin-top: 10px; /* Відступ від фотографії */
+}
+
+button {
+    padding: 50px 100px; /* Збільшуємо відступи кнопок */
+    font-size: 20px; /* Збільшуємо розмір шрифту */
+    background-color: #711b60; /* Змінюємо колір фону кнопок */
+    color: white; /* Змінюємо колір тексту кнопок */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Додатковий відступ між кнопками */
+}
+
+button:hover {
+    background-color: #5c0d4c; /* Змінюємо колір фону кнопок при наведенні */
+}
