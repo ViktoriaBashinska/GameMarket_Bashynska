@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(171, 207, 238);
+
+
+}
+
+content{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
