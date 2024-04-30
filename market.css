@@ -33,8 +33,10 @@ div {
 }
 
 .items {
-    padding: 10px;
+    adding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -61,7 +63,7 @@ div {
 } 
 
 .license {
-    font-size: 9px;
+    font-size: 20px;
     text-align: justify;
-    color: rgb(120, 120, 120);
+    color: rgb(5, 0, 0);
 }
