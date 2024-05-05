@@ -1,5 +1,9 @@
 body{
-    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Roboto;
     background-color: rgb(171, 207, 238);
     display: flex;
     justify-content: center;
@@ -7,7 +11,7 @@ body{
 }
 
 content{
-    width: 800px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +23,15 @@ div {
 }
 
 .title {
-    background: rgb(253, 48, 48);
     width: auto;
-    color: white;
     padding: 10px;
-    border-radius: 5px;
+    margin-top: 20px;
 
+    background: rgb(253, 48, 48);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+    color: white;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
@@ -32,22 +39,44 @@ div {
     letter-spacing: 3px;
 }
 
+/*блок товарів*/
 .items {
-    adding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
 }
 
+/*блок окремого товару*/
 .item {
-    width: 200px;
-    height: 320px;
+    min-width: 200px;
+    min-height: 400px;
     margin-bottom: 10px;
+    padding: 10px;
 
     border: 1px solid rgb(194, 194,194);
     border-radius: 5px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*блок назви товару*/
+.item-title{
+    font-weight: bold;
+}
+/*блок зображення товару*/
+.item-image{
+    height: 200px;
+}
+/*блок з оплатою*/
+.parts-pay{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .contacts p {
