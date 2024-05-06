@@ -1,0 +1,23 @@
+<div class="item">
+            <!-- блок назва товару-->
+            <div class="item-title">Мотокоса</div>
+            <!-- блок зображення товару-->
+            <div class="items-image">
+                <img scr="img-market/мотокоса.jpg" alt="Мотокоса">
+            </div>
+            <!-- блок оплатою частинами-->
+            <div class="parts-pay">
+                <div><img scr="img-market/mono-lapka.png" alt="">6</div>
+
+            </div>
+            <!-- блок ціни-->
+            <div class="price">
+                <div><span>5499</span><sup>грн</sup></div>
+                <div><span>4497</span><sup>грн</sup></div>
+            </div>
+            <!-- блок бонусної ціни-->
+            <div class="price bonus">
+                <div> ціна за купоном</div>
+                <div><span>4395</span><sup>грн</sup></div>
+            </div>
+        </div>
