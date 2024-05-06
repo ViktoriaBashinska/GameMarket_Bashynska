@@ -10,3 +10,7 @@ document.getElementById("feedback-btn").addEventListener("click", function() {
 document.getElementById("game-btn").addEventListener("click", function() {
     window.open("https://viktoriabashinska.github.io/Phaser2stGame/", "_blank");
 });
+
+document.getElementById("github-btn").addEventListener("click", function() {
+    window.open("https://github.com/ViktoriaBashinska/Phaser2stGame", "_blank");
+});
