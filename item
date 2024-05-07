@@ -1,23 +1,23 @@
 <div class="item">
-            <!-- блок назва товару-->
+            <!--Блок назва товару-->
             <div class="item-title">Мотокоса</div>
-            <!-- блок зображення товару-->
-            <div class="items-image">
+            <!--Блок зображення товару-->
+            <div class="item-image">
                 <img scr="img-market/мотокоса.jpg" alt="Мотокоса">
             </div>
-            <!-- блок оплатою частинами-->
+            <!--Блок з оплатою частинами-->
             <div class="parts-pay">
-                <div><img scr="img-market/mono-lapka.png" alt="">6</div>
-
+                <div><img scr="img-market/..." alt="">6</div>
+                <div><img scr="img-market/...." alt="">8</div>
             </div>
-            <!-- блок ціни-->
+            <!--Блок ціни-->
             <div class="price">
                 <div><span>5499</span><sup>грн</sup></div>
                 <div><span>4497</span><sup>грн</sup></div>
             </div>
-            <!-- блок бонусної ціни-->
+            <!--Блок бонусної ціни-->
             <div class="price bonus">
-                <div> ціна за купоном</div>
+                <div>ціна за купоном</div>
                 <div><span>4395</span><sup>грн</sup></div>
-            </div>
+            </div>        
         </div>
