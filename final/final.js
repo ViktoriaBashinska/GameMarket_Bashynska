@@ -1,189 +1,57 @@
 //перевірка підключеного файлу скриптів
-//console.log('Перевірка підключеного файлу скрипту market.js')
-
-//Отримання елементу з ідентифікатором items
-//let itemsDiv = document.getElementById("items")
-
-//визначення масиву товарів 
-// let itemsArray = [
-//     'Мотокоса 43',
-//     'Електричний тример 110',
-//     'Електрична газонокосарка 32',
-//     'Акумуляторний оприскувач 12 N'
-// ]
-
-let itemsArray = [
-   {
-       title:"Мотокоса 43",
-       image:'img/1.webp',
-       mono: 4,
-       pb: 8,
-       prise_standart: 5499,
-       prise_discount:4497,
-       prise_coupon:4395,
-   },
-   {
-       title:"Електричний тример 110",
-       image:'img/2.webp',
-       mono: 5,
-       pb: 10,
-       prise_standart:4497,
-       prise_discount:3498,
-       prise_coupon:3396,
-   },
-   {
-       title:"Електрична газонокосарка 32",
-       image:'img/3.webp',
-       mono: 8,
-       pb: 11,
-       prise_standart:4497,
-       prise_discount:3297,
-       prise_coupon:3185,
-   },
-   {
-       title:"Акумуляторний оприскувач 12 N",
-       image:'img/4.webp',
-       mono: 6,
-       pb: 12,
-       prise_standart:2190,
-       prise_discount:1698,
-       prise_coupon:1596,
-   },
-//    {
-//     firstName:"Віталій",
-//     lastName:"",
-//     age: 18,
-//     subject: "CS",
-//     photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
-//     url: "https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/", 
-//    }, 
-//    {
-//     firstName: "Наталія",
-//     lastName: "Венцель",
-//     age: 40,
-//     subject:"Директорка",
-//     photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/ventsel-nataliya-vasylivna-683x1024.jpg",
-//     url:"https://lyceum.ztu.edu.ua/team/ventsel-n-v/",
-//    },
-//    {
-//     firstName: "Олена",
-//     lastName: "Геча",
-//     age:18,
-//     subject:"Історія",
-//     photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna-683x1024.jpg",
-//     url:"https://lyceum.ztu.edu.ua/team/hecha-o-a/",
-//    },
-//    {
-//     firstName: "Вікторія",
-//     lastName: "Нелипович",
-//     age: 18,
-//     subject:"Математика",
-//     photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna-683x1024.jpg",
-//     url:"https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/",
-//    },
-
-]
+console.log('Перевірка підключеного файлу скрипту market.js')
 
 //отримання елементу з індифікатором items
 let itemsDiv  = document.getElementById("items");
 
-//checing on 
-if (itemsDiv) {
-   //creating blocks by quantity of elements
-   itemsArray
-   //sorting by lastnames
-   //.sort((a,b) => a.lastName.localeCompare(b.lastName))
-   //
-       .forEach((item,index) => (
-           //виводимо 
-           itemsDiv.innerHTML +=
-           `
-           <div class="item">
-               <div class="item-title">${item.title}</div>
-               <div class="item-image">
-                   <img src="${item.image}" alt="${item.name}">
-               </div>
-               <div class="parts-pay">
-                   <div><img src="img/monolapka.png" alt="">${item.mono}</div>
-                   <div><img src="img/pb.jpg" alt="">${item.pb}</div>
-               </div>
-               <div class="price">
-                   <div><span>${item.prise_standart}</span><sup>грн</sup></div>
-                   <div><span>${item.prise_discount}</span><sup>грн</sup></div>
-               </div>
-               <div class="price bonus">
-                   <div>Ціна за купоном</div>
-                   <div><span>${item.prise_coupon}</span><sup>грн</sup></div>
-               </div>
-           </div>
-
-           `
-       ))
-} else{
-   //вивід повідомлення про не знай 
-   console.log('Блок товарів не знайдено')
-}
-
-//сортування масиву
-// itemsArray = itemsArray.sort()
-
-
-//Вивід знайдкного елементу
-//onsole.log(itemsDiv)
-
-//Перевірка існування знайденого блоку
-//if (itemsDiv) {
-   //Вивід знайденого елементу
-  // console.log(itemsDiv)
-
-   //Вивід значення поля знайденого елементу
-   // console.log('Поле classList:', itemsDiv.classList)
-   // console.log('Поле id:', itemsDiv.id)
-   // console.log('Поле clientWidth:', itemsDiv.clientWidth)
-   // console.log('Поле innerHTML:', itemsDiv.innerHTML)
-
-   //Додавання тексту в блок
-   // itemsDiv.innerHTML = 'Перший Програмно доданий текст'
-   // // itemsDiv.innerHTML = 'Другий Програмно доданий текст'
-   // itemsDiv.innerHTML += 'Другий Програмно доданий текст'
-   //Додавання відформатованого HTML коду в блок
-   // itemsDiv.innerHTML = '<div  class = item></div>'
-   // itemsDiv.innerHTML += '<div  class = "item"></div>'
-   // itemsDiv.innerHTML += '<div  class = "item"></div>'
-   // itemsDiv.innerHTML += '<div  class = "item"></div>'
-   // itemsDiv.innerHTML += '<div  class = "item"></div>'
-   //for(let i = 0; i < 100; i++) {
-      // itemsDiv.innerHTML += '<div class="item"></div>'
-   //}
-
-//} else {
-   //Вивід знайденого елементу
-   //console.log('Блок товарів не знайдено')
-//}
-
-// //виведення елементів відсортованого масиву
-// itemsArray.sort().forEach((item, index) =>{
-//     console.log(index + '-й елемент', item)
-// })
-
-//виведення елементів відсорт. масиву 
-// itemsArray.sort().forEach((item, index) =>{
-//     console.log(index + '-й елемент', item)
-// })
-
-//виведення в консоль масиву
-   // console.log(itemsArray)
-
-
-//вив. в консоль номерів та значень елементів масиву 
-// for(let i = 0; i < itemsArray.length; i++) {
-//          console.log( i + '-й елемент:', itemsArray[i])
-//      }
-
-
-//виведення в консоль масиву
-// console.log(itemsArray)
-// for(let i = 0; i < 100; i++) 
-//     itemsDiv.innerHTML += '<div class="item"></div>'
-//     console.log('item')
-//     }
+let itemsArray = [
+    {
+        email: "23b_bvo@liceum.ztu.edu.ua",
+        group: "10-Б 1",
+        name: "Башинська Вікторія",
+        img_author: "Башинська.jpg",
+        img_game: "Башинська_game.jpg",
+        project_name: "Dudi 3",
+        project_github: "https://github.com/ViktoriaBashinska/Phaser2stGame",
+        project_live_demo: "https://viktoriabashinska.github.io/Phaser2stGame/",
+        project_drive: "https://drive.google.com/drive/folders/15v_c4DzKpW5323A4wYMV2Zj7AwRkSPUE?usp=sharing",
+        project_form: "https://forms.gle/jHMQsybKdMdUHXKA7",
+        gamemarket_github: "https://github.com/ViktoriaBashinska/GameMarket_Bashynska",
+        gamemarket_pages: "https://viktoriabashinska.github.io/GameMarket_Bashynska/",
+        market_page: "https://viktoriabashinska.github.io/GameMarket_Bashynska/market.html",
+        final_page: "https://viktoriabashinska.github.io/GameMarket_Bashynska/final/final.html"
+      },
+      {
+        email: "23b_bdo@liceum.ztu.edu.ua",
+        group: "10-Б 1",
+        name: "Біденко Дмитро",
+        img_author: "Біденко.jpg",
+        img_game: "",
+        project_name: "виживання проти зомбаря",
+        project_github: "https://github.com/dimasvoinboecvolk/Phaser2ndGame",
+        project_live_demo: "https://dimasvoinboecvolk.github.io/Phaser2ndGame/",
+        project_drive: "https://drive.google.com/drive/folders/18sH8j7zXJnz1Uz5bi3_uR6hss13pZhH-?usp=drive_link",
+        project_form: "https://forms.gle/RDawcnD98QcHnRZw7",
+        gamemarket_github: "https://github.com/dimasvoinboecvolk/GameMarket-bidenkko",
+        gamemarket_pages: "https://dimasvoinboecvolk.github.io/GameMarket-bidenkko/",
+        market_page: "https://dimasvoinboecvolk.github.io/GameMarket-bidenkko/market.html",
+        final_page: "https://dimasvoinboecvolk.github.io/GameMarket-bidenkko/final/final.html"
+      },
+      {
+        email: "23b_bmv@liceum.ztu.edu.ua",
+        group: "10-Б 1",
+        name: "Бовсуновського Максима",
+        img_author: "Бовсуновський.jpg",
+        img_game: "",
+        project_name: "дота 2",
+        project_github: "https://github.com/maksbovs/Phaser2ndGame",
+        project_live_demo: "https://maksbovs.github.io/Phaser2ndGame/",
+        project_drive: "https://drive.google.com/drive/folders/1k4q30LAPEh8EpQpzamE_RYHICcYwkVG1?usp=sharing",
+        project_form: "https://forms.gle/G2WLe25CYPCQjowTA",
+        gamemarket_github: "https://github.com/maksbovs/GameMarket_Bovsunoskiy",
+        gamemarket_pages: "https://maksbovs.github.io/GameMarket_Bovsunoskiy/",
+        market_page: "https://maksbovs.github.io/GameMarket_Bovsunoskiy/market.html",
+        final_page: "https://maksbovs.github.io/GameMarket_Bovsunoskiy/final/final.html"
+      },
+      
+]
