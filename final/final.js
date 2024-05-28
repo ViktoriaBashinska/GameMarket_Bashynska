@@ -190,7 +190,7 @@ let itemsArray = [
       "gamemarket_demo": "https://yawty1.github.io/GameMarket_Kravchuk/",
       "gamemarket_market_page": "",
       "gamemarket_final_page": "",
-      "img_author": "Кравчук.jpg",
+      "img_author": "Кравчук 1.jpg",
       "img_game": "Кравчук_game.jpg"
   },
   {
